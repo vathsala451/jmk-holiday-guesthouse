@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { MessageCircle, Phone } from 'lucide-react'
 import { PHONE_TEL, WHATSAPP_URL } from '@/lib/site'
+import { MistOverlay } from './mist-overlay'
 import { MoodToggle } from './mood-toggle'
 
 export function Hero() {
@@ -47,6 +48,7 @@ export function Hero() {
             sizes="(min-width: 1024px) 600px, 100vw"
             className="object-cover"
           />
+          <MistOverlay />
         </div>
       </div>
     </section>
