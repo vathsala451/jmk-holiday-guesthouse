@@ -48,7 +48,11 @@ export function Hero() {
             sizes="(min-width: 1024px) 600px, 100vw"
             className="object-cover"
           />
-          <MistOverlay />
+          <div aria-hidden="true" className="mood-layer mood-sunny absolute inset-0" />
+          <div aria-hidden="true" className="mood-layer mood-rain absolute inset-0 overflow-hidden" />
+          <div className="mood-mist absolute inset-0">
+            <MistOverlay />
+          </div>
         </div>
       </div>
     </section>

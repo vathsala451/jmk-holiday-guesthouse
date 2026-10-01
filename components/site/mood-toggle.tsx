@@ -27,6 +27,7 @@ export function MoodToggle() {
               aria-checked={active}
               onClick={() => {
                 setMood(id)
+                document.documentElement.dataset.mood = id
                 document.documentElement.style.setProperty('--mood-tint', tint)
               }}
               className={cn(
