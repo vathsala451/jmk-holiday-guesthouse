@@ -40,8 +40,8 @@ export function Hero() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-2xl shadow-moss/20">
           <Image
-            src="/images/hero-sohra.png"
-            alt="Green Khasi hills and waterfalls in Sohra at sunrise, with mist drifting through the valley"
+            src="/images/lake-jetty.png"
+            alt="Golden sun glinting over a calm lake near Sohra, with a guest leaning on a wooden railing at the viewpoint"
             fill
             priority
             sizes="(min-width: 1024px) 600px, 100vw"
