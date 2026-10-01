@@ -7,7 +7,9 @@ import { MoodToggle } from './mood-toggle'
 export function Hero() {
   return (
     <section id="top" aria-labelledby="hero-title" className="relative z-10 overflow-hidden">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:pb-20 lg:pt-16">
+      <div aria-hidden="true" className="mood-layer mood-sunny absolute inset-0" />
+      <div aria-hidden="true" className="mood-layer mood-rain absolute inset-0 overflow-hidden" />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:pb-20 lg:pt-16">
         <div className="flex flex-col gap-6">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate">Mawsmai, Sohra · Meghalaya</p>
           <h1
@@ -48,8 +50,6 @@ export function Hero() {
             sizes="(min-width: 1024px) 600px, 100vw"
             className="object-cover"
           />
-          <div aria-hidden="true" className="mood-layer mood-sunny absolute inset-0" />
-          <div aria-hidden="true" className="mood-layer mood-rain absolute inset-0 overflow-hidden" />
           <div className="mood-mist absolute inset-0">
             <MistOverlay />
           </div>
